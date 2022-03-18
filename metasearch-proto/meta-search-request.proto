@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "filter.proto";
+
+option java_multiple_files = true;
+option  java_package = "ebi.ensembl.registry.grpc.model";
+
+message MetaSearchRequest {
+  string name_pattern = 1;
+  repeated Filter filters = 2;
+  repeated string servers = 3;
+}
