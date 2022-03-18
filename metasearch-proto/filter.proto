@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option  java_package = "ebi.ensembl.registry.grpc.model";
+
+message Filter {
+  string meta_key = 1;
+  string meta_value = 2;
+}

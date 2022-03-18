@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "meta-search-request.proto";
+import "meta-search-response.proto";
+
+option java_multiple_files = true;
+option java_package = "ebi.ensembl.registry.grpc.service";
+
+service MetaSearchService {
+  rpc searchMetaTables(MetaSearchRequest) returns (MetaSearchResponse);
+}
